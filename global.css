@@ -29,6 +29,12 @@ h3 {
     margin-bottom:0.5em;
 }
 
+h4 {
+    font-weight: normal;
+    text-decoration: underline;
+    margin-bottom: 0em;
+}
+
 .fullScreen {
     height: 100vh;
     padding-top: 40vh;
@@ -183,14 +189,18 @@ dd {
     vertical-align: top;
 }
 
-#about dl li::after {
+.blockList .listing li {
+    margin-bottom: 0;
+}
+
+.listing li::after {
     content: ", ";
 }
 
-#about dl li:last-child:after {
+.listing li:last-child:after {
 content: "";
 }
-#about .simpleList li{
+.blockList li{
     margin-bottom: 1em;
 }
 #about img {
