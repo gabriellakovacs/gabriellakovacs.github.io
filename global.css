@@ -43,42 +43,43 @@ h4 {
 /*COVER*/
 
 header {
-    width: 1200px;
-    margin: auto;
+    width: 100%;
+}
+ul {
+    width: 100%;
+    padding: 0;
 }
 
 nav {
-    position: relative;
-    width: 290px;
-    left: 455px;
-    text-align: center;
-}
-
-nav li {
-    border: 2px solid white;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    border-radius: 60px;
-    position: relative;
-    height: 90px;
-    width: 90px;
-    padding-top: 35px;
     text-align: center;
     background: rgb(17, 4, 6);
 }
 
+nav li {
+    border: 1px solid white;
+    text-align: center;
+    width:90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 nav li:hover, .active {
     background-image: url("img/diagonal-blue.png");
-    border: 2px solid rgb(7, 81, 128);
+    border: 1px solid rgb(7, 81, 128);
     font-weight: bold;
 }
 
 nav.sticky {
     position: fixed;
-    transition: all 3s ease;
-    left:0;
+    width:100vw;
     top: 0;
     z-index: 1;
+}
+
+.sticky li {
+    width: 33%;
+    margin-left: -2px;
+    margin-right: -2px;
 }
 
 h1 {
@@ -98,8 +99,8 @@ h3 {
 
 /*MAIN CONTENT*/
 .container {
+    margin:auto;margin:auto;
     width: 600px;
-    margin:auto;
     padding-top: 28vh;
 }
 
@@ -125,7 +126,6 @@ h3 {
 
 #portfolio .top, #portfolio .bottom {
     width: 100%;
-    //height: 50%;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -135,8 +135,8 @@ h3 {
 }
 
 article {
-    padding-top: 15px;
     width: 100%;
+    padding-top: 15px;
 }
 
 p {
@@ -147,20 +147,6 @@ p {
     display: block;
     width: 100%;
     padding-bottom: 15px;
-    filter: grayscale(1);
-        -webkit-filter: grayscale(1);
-        -moz-filter: grayscale(1);
-        -o-filter: grayscale(1);
-        -ms-filter: grayscale(1);
-}
-
-.top img:hover {
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    z-index:0;
 }
 
 
@@ -177,16 +163,16 @@ ul {
 
 dt {
     display: inline-block;
-    width: 200px;
     vertical-align: top;
+    width: 200px;
 }
 
 dd {
     margin: 0;
     margin-bottom: 1em;
     display: inline-block;
-    width: 390px;
     vertical-align: top;
+    width: 390px; 
 }
 
 .blockList .listing li {
@@ -237,60 +223,15 @@ content: "";
     text-align: center;
 }
 
-@media (min-width:900px) and (max-width:1200px){
-    header {
-        width: 900px;
-    }
+@media  (max-width:700px) {
 
-    nav {
-        left: 305px;
-    }
-}
-
-@media (min-width:600px) and (max-width:900px){
-    header {
-        width: 600px;
-    }
-
-    nav {
-        left: 155px;
-    }
-}
-
-@media  (max-width:600px){
-    body {
-        font-size: 0.8em;
-    }
-
-    header {
-        width: 300px;
-    }
-
-    nav {
-        width: 190px;
-        left: 55px;
-    }
     .container {
-        width: 300px;
+        width: 400px;
         padding-top: 100px;
     }
 
     h1 {
-        font-size: 1.5em;
-    }
-
-    nav li {
-        height: 60px;
-        width: 60px;
-        padding-top: 20px;
-    }
-
-    nav.sticky {
-        left: 5px;
-    }
-
-    .project {
-        //height: 380px;
+        font-size: 1.8em;
     }
 
     article {
@@ -314,4 +255,30 @@ content: "";
         width: 150px;
     }
 
+}
+
+@media  (max-width:400px){
+    body {
+        font-size: 0.8em;
+    }
+
+    .projectHeader a img {
+    width: 20px;
+    } 
+
+    h1{
+        font-size:1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .container {
+        width: 300px;
+        padding-top: 100px;
+    }
+    nav li {
+        width: 32%;
+    }
 }

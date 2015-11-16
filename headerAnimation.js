@@ -1,5 +1,5 @@
 $(function(){
-    // move navigational circles to left side by adding sticky class
+    // stick navigation to screen top by adding sticky class
     var stickyHeader = $('.nav').offset().top;
 
     $(window).scroll(function() {  
