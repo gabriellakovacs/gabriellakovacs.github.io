@@ -149,6 +149,10 @@ p {
     padding-bottom: 15px;
 }
 
+.project p a {
+    font-weight: bold;
+}
+
 
 /*ABOUT*/
 
