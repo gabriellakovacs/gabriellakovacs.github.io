@@ -1,314 +1,68 @@
-        
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <head>
+        <meta charset="utf-8">
+        <title>gabriella kovacs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Gabriella Kovács</title>
+        <style media="screen">
+            body,html{margin:0;padding:0;font-family:monospace;color:white;font-size:2vw}body{padding-top:20vh;overflow-x:hidden;background:black}h1{padding-bottom:7vh;font-size:3vw}h2{font-size:inherit}h1,h2{z-index:3;position:relative;font-weight:normal}a{text-decoration:none;transition:.5s cubic-bezier(0,.14,.55,.99);background-color:white;color:black;padding:0 15px}.works{z-index:1;position:relative}.works li{margin-bottom:1em}a:hover{//background-color:#888;//color:#fff}ul{padding:0}li{list-style:none;display:inline-block}canvas{position:fixed;top:0;left:0}main{z-index:1;display:block;position:relative;width:80%;max-width:850px;min-width:290px;margin:0 auto;opacity:1;transform:translate(0,1px);transition:opacity 4s cubic-bezier(.05,.23,.24,.96) transform:4s cubic-bezier(.05,.23,.24,.96)}@media(max-width:400px){main{width:290px}}main.invisible{opacity:0;transform:translate(0,5%);pointer-events:none}.contact{font-size:1.5vw}.hoverDisplay{z-index:0;position:fixed;top:0;left:0;width:100vw;height:100vh;opacity:0;pointer-events:none;font-size:5vw}.hoverDisplay.on{opacity:1}.hoverDisplay span{position:absolute;color:green;mix-blend-mode:difference;font-family:'Bungee Shade',cursive}.hoverDisplay span:nth-child(3n+1){color:red}.hoverDisplay span:nth-child(3n+2){color:blue}@media screen and (orientation:portrait){body{font-size:5vw;padding-top:5vh}h1{font-size:5.5vw}.contact{font-size:3.5vw}.hoverDisplay{font-size:7vw}.works li{margin-bottom:.5em}
+        </style>
+    </head>
+    <body>
 
-    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Plaster' rel='stylesheet' type='text/css'>
-    <link rel = "icon" type = "image/x-icon" href="img/favicon.ico">
+        <canvas></canvas>
 
+        <main class="invisible">
+            <h1>Gabriella Kovács / web developer</h1>
+            <h2>Selected Work</h2>
+            <ul class="works">
+                <li>
+                    <a class="js-hover-trigger" href="https://www.volkshaus.ch/" target="_blank">Volkshaus</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="https://spkantonzh.ch/" target="_blank">Sp Kanton Zürich</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="http://offshorestudio.ch/" target="_blank">Offshore Studio</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="http://naturalcapital.online/" target="_blank">Natural Capital</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="http://www.hej.ch/" target="_blank">Hej</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="http://birthday16.y7k.rip/" target="_blank">Y7K birthday</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="https://raffinerie.com/" target="_blank">Raffinerie</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="http://lesbianlivesproject.com/" target="_blank">The Lesbian Lives Project</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="https://y7k.com/" target="_blank">Y7K</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="https://daizy.ch/" target="_blank">Daizy</a>
+                </li>
+            </ul>
+            <ul class="contact">
+                <li>
+                    <a class="js-hover-trigger" href="mailto:kovacsxgabriella@gmail.com" target="_blank">email</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="https://uk.linkedin.com/in/gabriella-kovács-95915310a" target="_blank">linkedin</a>
+                </li>
+                <li>
+                    <a class="js-hover-trigger" href="https://github.com/gabriellakovacs" target="_blank">github</a>
+                </li>
+            </ul>
+        </main>
 
-    <link href="global.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <div class="fullScreen">
-        <header >
-            <h1 >Gabriella Kovács</h1>
-            <nav class="nav">
-                <ul>
-                    <li id="navPortfolio"><a href="#portfolio">portfolio</a></li>
-                    <li id="navAbout"><a href="#about">about</a></li>
-                    <li id="navContact"><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+        <!-- BACKGROUND -->
+        <script src="js/background.js"></script>
 
-    <div id="portfolio" class="container">
-
-        <div class="project">
-            <div class="top">
-                <a href="http://gabriellakovacs.github.io/studio/dist" target="_blank"><img src="img/hm-studio.jpg" alt=""/></a>
-            </div>
-            <div class="bottom">
-                <article>
-                    <div class="projectHeader">
-                        <h3>Hughes Meyer Studio</h3>
-                        <a href="http://gabriellakovacs.github.io/studio/dist" target="_blank"><img src="img/github.png"></a>
-                    </div> 
-                    <p>
-                        Website for a London based art studio. This is an ongoing project, a multi page website with a very strict space handling design. I have used Javascript and jQuery extensively for creating some of the features of the site, like a space optimizing responsive grid for navigating between elements inside a large project, a lens zoom effect to reveal subtle details and semi-fixed elements to accommodate the design.
-                        As the site has many pages using the same layout, I utilized the features of Gulp and Swig for templating.
-
-                    </p>
-                </article>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="top">
-                <a href="http://gabriellakovacs.github.io/customize_map" target="_blank"><img src="img/customize_map.jpg" alt=""/></a>
-            </div>
-            <div class="bottom">
-                <article>
-                    <div class="projectHeader">
-                        <h3>Map customization tool</h3>
-                        <a href="http://gabriellakovacs.github.io/customize_map" target="_blank"><img src="img/github.png"></a>
-                    </div> 
-                    <p>
-                        A website that enables users to customize colors, visibility and line thickness of the areas on their maps using a graphic interface, and then generates the code for them.
-                    </p>
-                    <p>
-                        A simple task, but it led me to discover many great features like the shutter out vertical effect used on the menu items, 3D CSS transitions used on the visibility radio buttons, a great styler for number inputs and of course the customization of Google maps.
-                    </p>
-                </article>
-            </div>
-        </div>
-        
-       <div class="project">
-            <div class="top">
-                <a href="http://gabriellakovacs.github.io/sarbat" target="_blank"><img src="img/sarbat.jpg" alt=""/></a>
-            </div>
-            <div class="bottom">
-                <article>
-                    <div class="projectHeader">
-                        <h3>Sarbat</h3>
-                        <a href="http://gabriellakovacs.github.io/sarbat" target="_blank"><img src="img/github.png"></a>
-                    </div>     
-                    <p>
-                        A single page website, created based on a free Behance <a href="https://www.behance.net/gallery/30219961/Sarbat-FREEBIE">web design</a> by Vishnu Sathyan. I have used Sass to style the page. The gallery section presented a great opportunity for trying out Masonry, a grid layout library and experiment with CSS transitions for the captions. The conical gradient skills progression bar was drawn using canvas. In order to provide a great user experience across all devices I have made the site responsive.
-                    </p>
-                </article>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="top">
-                <a href="http://codepen.io/GabriellaKovacs/full/ojBpbw/" target="_blank"><img src="img/hexagon_kaleidoscope.jpg" alt=""/></a>
-            </div>
-            <div class="bottom">
-                <article>
-                    <div class="projectHeader">
-                        <h3>Kaleidoscope 1</h3>
-                        <a href="http://codepen.io/GabriellaKovacs/full/ojBpbw/" target="_blank"><img src="img/codepen.png"></a>
-                    </div>
-                    <p>
-                        While completing an edX course on HTML 5 by W3C I came across the canvas element and got very enthusiastic really quickly. This is one of the experiments that I have built using Javascript on codepen. 
-                        It is a kaleidoscope like effect with hexagons mirroring moving dots inside them.
-                    </p>
-                </article>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="top">
-                <a href="http://codepen.io/GabriellaKovacs/full/memqmJ/" target="_blank"><img src="img/triangle_kaleidoscope.jpg" alt=""/></a>
-            </div>
-            <div class="bottom">
-                <article>
-                    <div class="projectHeader">
-                        <h3>Kaleidoscope 2</h3>
-                        <a href="http://codepen.io/GabriellaKovacs/full/memqmJ/" target="_blank"><img src="img/codepen.png"></a>
-                    </div>                 
-                    <p>
-                        The second piece of my ongoing Kaleidoscope series, this time I used the sides of triangles to mirror the movement of circular lines inside.
-                    </p>
-                </article>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="top">
-                <a href="http://gabriellakovacs.github.io/XmasTetris" target="_blank"><img src="img/tetris_Xmas.jpg" alt=""/></a>
-            </div>
-            <div class="bottom">
-                <article>
-                    <div class="projectHeader">
-                        <h3>Tetris Xmas</h3>
-                        <a href="http://gabriellakovacs.github.io/XmasTetris" target="_blank"><img src="img/github.png"></a>
-                    </div>                 
-                    <p>
-                        A holiday themed project to practice CSS animations and to explore more features of SASS. 
-                        Creating the tetris snowflakes using the "box-shadow" property with multiple arguments was inspired by a <a href="http://codepen.io/saransh/pen/BKJun">codepen</a> I have stumbled upon recently. Studying the code of my fellow codepeners is always a great way to discover exciting new features.
-                    </p>
-                </article>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="top">
-                <a href="http://gabriellakovacs.github.io/climbing" target="_blank"><img src="img/climbing.jpg" alt=""/></a>
-            </div>
-            <div class="bottom">
-                <article>
-                    <div class="projectHeader">
-                        <h3>Spider Club</h3>
-                        <a href="http://gabriellakovacs.github.io/climbing" target="_blank"><img src="img/github.png"></a>
-                    </div>     
-                    <p>
-                        This project was an enjoyable exercise to practice bootstrap. I have mostly experimented with the responsive grid layout provided by the framework, it was a great learning experience to solve the problem of the need for a margin versus bootstrap's margin unfriendly column layout with grid inception.
-                        The project also presented a valuable lesson about optimizing taxing tasks in Javascript with the debounce function.
-                    </p>
-                </article>
-            </div>
-        </div>
-        
-        <div class="project">
-            <div class="top">
-                <a href="http://codepen.io/GabriellaKovacs/full/yYVpXO/" target="_blank"><img src="img/bubbles.jpg" alt=""/></a>
-            </div>
-            <div class="bottom">
-                <article>
-                    <div class="projectHeader">
-                        <h3>Soap Bubbles</h3>
-                        <a href="http://codepen.io/GabriellaKovacs/full/yYVpXO/" target="_blank"><img src="img/codepen.png"></a>
-                    </div>
-                    <p>
-                        My first project using the canvas element, I had a great time experimenting with the math of the trajectories to bring the movement of the bubbles as close to reality as possible. Resembling the fact, that one can never encounter the exact same result when blowing real soap bubbles, I invoked random numbers to set the starting position and to some extent the initial radii of the bubbles, therefore every viewer has a unique experience.
-                    </p>
-                </article>
-            </div>
-        </div>
-    </div>
-
-    <div id="about" class="container">
-        <h3>Education</h3>
-        <ul class="blockList">
-            <li>
-                Faculty of Economics, Corvinus University of Budapest
-                <br>
-                Economics (BSc)
-            </li>
-            <li>
-                Faculty of Humanities, Eötvös Loránd University of Science
-                <br>
-                Philosophy (BA)
-            </li>
-            <li>
-                <h4>Online Courses</h4>
-                <br>
-                <ul>
-                    <li>
-                        MIT
-                        <br>
-                        Introduction to Computer Science and Programming
-                    </li>
-                    <li>
-                        Lynda.com
-                        <br>
-                        <ul class="listing">
-                            <li>Web Design Fundamentals</li>
-                            <li>CSS Core Concepts</li>
-                            <li>Javascript Essential Training</li>
-                            <li>HTML Essential Training</li>
-                            <li>Dreamweaver CC Esential Training</li>
-                            <li>Bootstrap 3 Essential Training</li>
-                            <li>Sass Essential Training</li>
-                            <li>Web Project Workflows with Gulp.js, Git, and Browserify</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h4>Recently started Online Courses</h4>
-                <br>
-                <ul>
-                    <li>
-                        Future Learn
-                        <br>
-                        3D Graphics for Web Developers
-                    </li>
-                    <br>
-                    <li>
-                        Khan Academy
-                        <br>
-                        Algorithms
-                    </li>
-                </ul>
-            </li>
-        </ul>
-            
-        <h3>Skills</h3>
-        <dl>
-            <dt>Web skills</dt>
-            <dd>
-                <ul class="listing">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Sass</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                    <li>Bootstrap</li>
-                    <li>Gulp</li>
-                    <li>Swig</li>
-                    <li>Canvas</li>
-                    <li>Google Maps API</li>
-                    <li>Responsive Web Design</li>
-                    <li>Microdata</li>
-                    <li>Web Font Embedding</li>
-                    <li>Masonry</li>
-                    <li>Three.js</li>
-                    <li>Python</li>
-                </ul>
-            </dd>
-            <br>
-            <dt>Image editing tools</dt>
-            <dd>
-                <ul>
-                    <li>Photoshop</li>
-                </ul>
-            </dd>
-            <br>
-            <dt>3D modelling software</dt>
-            <dd>
-                <ul>
-                    <li>Rhino</li>
-                    <li>Grasshopper (Rhino's graphical algorithm editor)</li>
-                </ul>
-            </dd>
-        </dl>
-
-        <h3>Languages</h3>
-        <dl>
-            <dt>Hungarian</dt>
-            <dd>native</dd>
-            <br>
-            <dt>English</dt>
-            <dd>fluent</dd>
-            <br>
-            <dt>German</dt>
-            <dd>intermediate</dd>
-        </dl>
-           
-        <h3>Experiences</h3>
-        <ul class="blockList">
-            <li>
-                Assistant at Heatherwick Studio – London, UK
-                <br>
-                Responsibilities: assisting the makers in creating models for the studio and preparing files for 3d printing using Rhino and Grasshopper
-            </li>
-            <li>
-                Intern at Budapest Bank (GE Capital) – Budapest, Hungary
-                <br>
-                Responsibilities: creating monthly financial reports, supporting the workflow of the financial reporting team using SQL, VBA and Excel
-            </li>
-        </ul>
-  
-    </div>
-
-    <div id="contact" class="fullScreen">
-        <a class="mail" href="mailto:kovacsxgabriella@gmail.com">kovacsxgabriella@gmail.com</a>
-        <div class="bottom">
-            <a href="http://codepen.io/GabriellaKovacs/"><img src="img/codepen.png"></a>
-            <a href="https://github.com/gabriellakovacs" target="_blank"><img src="img/github.png"></a>
-            <a href="https://uk.linkedin.com/in/gabriella-kovács-95915310a"><img src="img/lin.png"></a>
-        </div>
-    </div>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="headerAnimation.js"></script>
-</body>
+    </body>
 </html>
